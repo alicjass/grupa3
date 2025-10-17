@@ -120,3 +120,13 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+INSTALLED_APPS = [
+    'apka.apps.ApkaConfig', # <==== Tu jest nasza apka, gdzie "myapp" to nazwa naszej apki, "apps" to plik "apps.py", a "MyappConfig" to nazwa klasy konfiguracyjnej zawierającej się w pliku "apps.py"
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+]
